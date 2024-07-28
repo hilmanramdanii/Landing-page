@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamping Lakeside Rancabali - Pesona Rancabali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/glamping.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="../image/Logo.jpg" alt="Pesona Rancabali Logo">
+                <span>Pesona Rancabali</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#destinations" class="dropbtn">Destinasi</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/perkebunan-rancabali.html">Perkebunan Teh Rancabali</a></li>
+                            <li><a href="../pages/situ-patenggang.html">Situ Patenggang</a></li>
+                            <li><a href="../pages/kawah-putih.html">Kawah Putih</a></li>
+                            <li><a href="../pages/rancaupas.html">Rancaupas</a></li>
+                            <li><a href="../pages/walini.html">Hot Spring Walini</a></li>
+                            <li><a href="../pages/rengganis.html">Rengganis Suspension Bridge</a></li>
+                            <li><a href="../pages/curug-tilu.html">Ecopark Curug Tilu</a></li>
+                            <li><a href="../pages/glamping.html">Glamping Lakeside</a></li>
+                            <li><a href="../pages/kawah-rengganis.html">Kawah Rengganis</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars" id="hamburger-icon"></i>
+                <i class="fas fa-times" id="close-icon" style="display: none;"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Glamping Lakeside Rancabali</h1>
+                <p>Pengalaman menginap yang mewah dan nyaman di tengah alam dengan pemandangan yang memukau.</p>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="flex-container">
+                <article class="content">
+                    <h2>Deskripsi</h2>
+                    <p>Glamping Lakeside Rancabali adalah destinasi wisata premium yang menawarkan pengalaman berkemah
+                        mewah di tengah alam. Terletak di ketinggian sekitar 1.600 meter di atas permukaan laut, tempat
+                        ini menyajikan pemandangan memukau Danau Patenggang dan perbukitan hijau yang dikelilingi
+                        perkebunan teh. Udara sejuk pegunungan dan suasana tenang menjadikannya pilihan ideal untuk
+                        liburan keluarga atau pasangan yang menginginkan keseimbangan antara kenyamanan dan kedekatan
+                        dengan alam</p>
+
+                    <h2>Lokasi</h2>
+                    <p>Alamat: Jalan Raya Ciwidey, Situ Patenggang Km. 39, Rancabali, Bandung, Jawa Barat<br>Jarak:
+                        Sekitar 50 km atau 2 jam perjalanan dari pusat Kota Bandung<br>Akses: Dapat dicapai dengan
+                        kendaraan pribadi atau transportasi umum</p>
+
+                    <h2>Harga Tiket Masuk</h2>
+                    <ul>
+                        <li>Wisatawan domestik: Rp 25.000 per orang</li>
+                        <li>Wisatawan mancanegara: Rp 50.000 per orang</li>
+                    </ul>
+
+                    <h2>Biaya Parkir</h2>
+                    <ul>
+                        <li>Motor: Rp 3.000 per jam</li>
+                        <li>Mobil: Rp 5.000 per jam</li>
+                        <li>Bus: Rp 25.000 per jam</li>
+                    </ul>
+
+                    <h2>Akomodasi dan Harga</h2>
+                    <ul>
+                        <li>Lakeside Tent:
+                            <ul>
+                                <li>Weekday: Rp 1.590.000</li>
+                                <li>Weekend: Rp 1.830.000</li>
+                                <li>High season: Rp 1.910.900</li>
+                            </ul>
+                        </li>
+                        <li>Hillside Tent: Harga bervariasi, menawarkan pemandangan lebih luas</li>
+                        <li>Family Tent: Harga bervariasi, cocok untuk keluarga atau kelompok kecil</li>
+                        <li>Extra bed: Rp 300.000 per unit</li>
+                    </ul>
+
+                    <h2>Fasilitas</h2>
+                    <ul>
+                        <li>Akomodasi: Tenda mewah dengan tempat tidur nyaman, listrik, dan kamar mandi pribadi</li>
+                        <li>Area umum: Parkir, toilet, musala, café, restoran, area bermain anak, area piknik</li>
+                        <li>Rekreasi: Area api unggun, area BBQ, persewaan sepeda</li>
+                        <li>Tambahan: Wi-Fi gratis di area umum, layanan pijat dan spa, toko suvenir</li>
+                        <li>Layanan: Concierge untuk mengatur aktivitas dan perjalanan</li>
+                    </ul>
+
+                    <h2>Jam Operasional</h2>
+                    <p>Buka setiap hari:<br>Area wisata: 09:00 - 17:00 WIB<br>Fasilitas akomodasi: 24 jam (untuk tamu
+                        menginap)</p>
+
+                    <h2>Daya Tarik dan Aktivitas</h2>
+                    <ul>
+                        <li>Pemandangan alam: Danau Patenggang, perbukitan, dan perkebunan teh</li>
+                        <li>Aktivitas outdoor: Hiking, perahu danau, outbound, memancing, kayak, bersepeda</li>
+                        <li>Wisata edukasi: Tur dan pembelajaran tentang proses pembuatan teh</li>
+                        <li>Kuliner: Hidangan lokal Sunda dan fusion modern dengan bahan segar lokal</li>
+                        <li>Fotografi: Banyak spot instagramable tersedia</li>
+                        <li>Stargazing: Pengamatan bintang di malam hari</li>
+                    </ul>
+
+                    <h2>Tips Berkunjung</h2>
+                    <ul>
+                        <li>Reservasi akomodasi jauh-jauh hari, terutama untuk akhir pekan dan musim liburan</li>
+                        <li>Kenakan pakaian nyaman dan sepatu yang cocok untuk aktivitas outdoor</li>
+                        <li>Bawa jaket atau sweater untuk malam hari yang dingin</li>
+                        <li>Siapkan kamera untuk mengabadikan momen</li>
+                        <li>Cek prakiraan cuaca sebelum berkunjung</li>
+                        <li>Bawa obat-obatan pribadi yang diperlukan</li>
+                        <li>Jaga kebersihan area dan ikuti petunjuk keselamatan</li>
+                        <li>Hormati budaya dan adat istiadat lokal</li>
+                    </ul>
+
+                    <h2>Informasi Tambahan</h2>
+                    <ul>
+                        <li>Tersedia paket khusus untuk perayaan (ulang tahun, anniversary, pernikahan)</li>
+                        <li>Paket korporat untuk kegiatan team building atau retreat perusahaan</li>
+                        <li>Aktivitas tambahan dapat direservasi sebelum kedatangan</li>
+                    </ul>
+
+                    <p>Sumber: <a
+                            href="https://www.detik.com/jabar/wisata/d-6924558/tiket-masuk-glamping-lakeside-rancabali-sewa-tenda-ada-apa-saja-di-sana">Detik.com</a>
+                    </p>
+                </article>
+
+                <aside class="photo-gallery">
+                    <h2 class="section-title">Galeri Foto</h2>
+                    <div class="photo-container">
+                        <figure>
+                            <img src="../image/glamping1.jpg" alt="Tenda Glamping di Tepi Danau">
+                            <figcaption>Tenda Glamping Mewah di Tepi Danau</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/glamping2.jpg" alt="Pemandangan Danau dari Tenda">
+                            <figcaption>Pemandangan Memukau Danau Patenggang</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/glamping3.jpeg" alt="Interior Tenda Glamping">
+                            <figcaption>Interior Mewah Tenda Glamping</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/glamping4.jpg" alt="Aktivitas Outdoor di Glamping">
+                            <figcaption>Aktivitas Outdoor yang Menyenangkan</figcaption>
+                        </figure>
+                    </div>
+                    <div class="map-container">
+                        <h3 class="section-title">Peta Interaktif</h3>
+                        <div id="glamping-map"></div>
+                    </div>
+                    <div class="glamping-weather">
+                        <h3 class="section-title">Prakiraan Cuaca Glamping Lakeside</h3>
+                        <div id="glamping-weather">
+                            <div id="glamping-current-weather"></div>
+                            <div id="glamping-forecast"></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesona Rancabali. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/toggle.js"></script>
+    <script src="../js/glamping-interactive.js"></script>
+</body>
+
+</html>

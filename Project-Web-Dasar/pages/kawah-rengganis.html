@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawah Rengganis - Pesona Rancabali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/kawah-rengganis.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="../image/Logo.jpg" alt="Pesona Rancabali Logo">
+                <span>Pesona Rancabali</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="../index.html#destinations" class="dropbtn">Destinasi</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/perkebunan-rancabali.html">Perkebunan Teh Rancabali</a></li>
+                            <li><a href="../pages/situ-patenggang.html">Situ Patenggang</a></li>
+                            <li><a href="../pages/kawah-putih.html">Kawah Putih</a></li>
+                            <li><a href="../pages/rancaupas.html">Rancaupas</a></li>
+                            <li><a href="../pages/walini.html">Hot Spring Walini</a></li>
+                            <li><a href="../pages/rengganis.html">Rengganis Suspension Bridge</a></li>
+                            <li><a href="../pages/curug-tilu.html">Ecopark Curug Tilu</a></li>
+                            <li><a href="../pages/glamping.html">Glamping Lakeside</a></li>
+                            <li><a href="../pages/kawah-rengganis.html">Kawah Rengganis</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars" id="hamburger-icon"></i>
+                <i class="fas fa-times" id="close-icon" style="display: none;"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Kawah Rengganis</h1>
+                <p>Keindahan alam yang memukau dengan pemandangan kawah dan perbukitan di Ciwidey</p>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="flex-container">
+                <article class="content">
+                    <h2>Deskripsi</h2>
+                    <p>Kawah Rengganis adalah kawah di kaki Gunung Kamojang yang digunakan untuk pemandian air panas. Uap dari kawah ini
+                        diyakini bermanfaat untuk kesehatan kulit, melancarkan peredaran darah dan pernafasan, hingga menenangkan
+                        pikiran. Terletak di kawasan Rancabali, Bandung Selatan, Kawah Rengganis menjadi salah satu destinasi geowisata
+                        yang populer di Jawa Barat.</p>
+                
+                    <h2>Sejarah</h2>
+                    <p>Dikutip dari wawancara detikTravel, sejarah Kawah Rengganis konon merupakan saksi pertemuan para leluhur Sunda
+                        sejak ratusan tahun lalu untuk melakukan kegiatan keagamaan dan membahas masalah kehidupan. Hingga kini, Kawah
+                        Rengganis masih sering dikunjungi para peziarah, termasuk dari Bali menjelang Hari Raya Nyepi. Nama Rengganis
+                        sendiri diambil dari tokoh dalam cerita rakyat Sunda yang diyakini memiliki kekuatan supernatural.</p>
+                
+                    <h2>Geologi</h2>
+                    <p>Kawah Rengganis merupakan bagian dari kompleks gunung api Kamojang-Guntur. Area ini memiliki aktivitas geotermal
+                        yang tinggi, ditandai dengan keberadaan fumarol, solfatara, dan mata air panas. Suhu air di kawah ini bisa
+                        mencapai 90°C, menunjukkan aktivitas panas bumi yang masih aktif di bawah permukaan.</p>
+                
+                    <h2>Daya Tarik</h2>
+                    <p>Kawah Rengganis memiliki sejumlah daya tarik, antara lain:</p>
+                    <ol>
+                        <li>Kolam Rendam: Pengunjung dapat berendam di kolam air panas alami dengan suhu yang bervariasi.</li>
+                        <li>Mandi Lumpur: Terdapat area khusus untuk mandi lumpur yang diyakini memiliki khasiat untuk kesehatan kulit.
+                        </li>
+                        <li>Pancuran Air Panas: Beberapa titik pancuran air panas tersedia untuk menikmati aliran air panas langsung
+                            dari sumbernya.</li>
+                        <li>Aliran Sungai: Sungai kecil dengan air panas mengalir di sekitar kawah, menciptakan pemandangan unik.</li>
+                        <li>Jembatan Rengganis: Jembatan gantung yang menawarkan panorama indah kawasan Rancabali.</li>
+                        <li>Pemandangan Alam: Kawasan ini dikelilingi oleh perbukitan hijau dan hutan yang asri, menawarkan pemandangan
+                            alam yang menakjubkan.</li>
+                    </ol>
+                
+                    <h2>Aktivitas</h2>
+                    <p>Selain berendam air panas, pengunjung dapat menikmati berbagai aktivitas:
+                    <ul>
+                        <li>Berjalan di Jembatan Rengganis untuk menikmati pemandangan dari ketinggian.</li>
+                        <li>Naik Keranjang Sultan, wahana unik yang menawarkan pengalaman menaiki keranjang gantung.</li>
+                        <li>Trekking di sekitar kawasan untuk menjelajahi keindahan alam.</li>
+                        <li>Fotografi, dengan banyak spot menarik untuk diabadikan.</li>
+                        <li>Meditasi dan relaksasi, memanfaatkan suasana alami yang tenang.</li>
+                    </ul>
+                
+                    <h2>Manfaat Kesehatan</h2>
+                    <p>Air panas di Kawah Rengganis diyakini memiliki berbagai manfaat kesehatan:
+                    <ul>
+                        <li>Meringankan nyeri otot dan sendi</li>
+                        <li>Meningkatkan sirkulasi darah</li>
+                        <li>Detoksifikasi tubuh</li>
+                        <li>Meredakan stress dan kelelahan</li>
+                        <li>Membantu menyembuhkan penyakit kulit tertentu</li>
+                    </ul>
+                
+                    <h2>Informasi Kunjungan</h2>
+                    <h3>Harga Tiket</h3>
+                    <p>Harga tiket masuk Kawah Rengganis sekitar Rp 30.000 per orang. Terdapat juga paket tiket terusan seharga Rp
+                        100.000 untuk menikmati berbagai wahana seperti Jembatan Rengganis, Keranjang Sultan, Situ Patenggang, dan
+                        Glamping Lakeside.</p>
+                
+                    <h3>Jam Operasional</h3>
+                    <p>Kawah Rengganis buka setiap hari dari pukul 07.00 WIB hingga 17.00 WIB.</p>
+                
+                    <h3>Lokasi dan Akses</h3>
+                    <p>Kawah Rengganis berlokasi di Jalan Raya Rancabali, Cibuni, Desa Patenggang, Kecamatan Rancabali, Kabupaten
+                        Bandung, Jawa Barat. Dari pusat Kabupaten Bandung, jaraknya sekitar 33 km atau sekitar 1 jam perjalanan. Akses
+                        menuju lokasi cukup baik dengan jalan beraspal, meski beberapa bagian curam dan berkelok.</p>
+                
+                    <h2>Tips Berkunjung</h2>
+                    <ul>
+                        <li>Kunjungi pada hari kerja untuk menghindari keramaian.</li>
+                        <li>Bawa pakaian ganti dan handuk pribadi.</li>
+                        <li>Perhatikan kondisi kesehatan sebelum berendam di air panas.</li>
+                        <li>Bawalah air minum yang cukup untuk menjaga hidrasi.</li>
+                        <li>Patuhi aturan dan petunjuk keselamatan di lokasi.</li>
+                    </ul>
+                
+                    <p>Sumber:
+                        <a
+                            href="https://www.detik.com/jabar/wisata/d-6940124/kawah-rengganis-bandung-daya-tarik-aktivitas-harga-tiket-dan-lokasi">Detik.com</a> & 
+                        <a
+                            href="https://travel.kompas.com/read/2023/05/20/190700227/7-fakta-menarik-kawah-rengganis-wisata-pemandian-air-panas-di-bandung">Kompas.com</a>
+                    </p>
+                </article>
+
+                <aside class="photo-gallery">
+                    <h2 class="section-title">Galeri Foto</h2>
+                    <div class="photo-container">
+                        <figure>
+                            <img src="../image/kawahrengganis1.jpg" alt="Pemandangan Kawah Rengganis">
+                            <figcaption>Pemandangan Menakjubkan Kawah Rengganis</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/kawahrengganis2.jpg" alt="Air Panas di Kawah Rengganis">
+                            <figcaption>Kolam Air Panas Alami di Kawah Rengganis</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/kawahrengganis3.jpg" alt="Pendakian Menuju Kawah Rengganis">
+                            <figcaption>Jalur Pendakian Menuju Kawah Rengganis</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/kawahrengganis4.jpg" alt="Pemandangan Alam Sekitar Kawah Rengganis">
+                            <figcaption>Keindahan Alam di Sekitar Kawah Rengganis</figcaption>
+                        </figure>
+                    </div>
+                    <div class="map-container">
+                        <h3 class="section-title">Peta Interaktif</h3>
+                        <div id="kawah-rengganis-map"></div>
+                    </div>
+                    <div class="kawah-rengganis-weather">
+                        <h3 class="section-title">Prakiraan Cuaca Kawah Rengganis</h3>
+                        <div id="kawah-rengganis-weather"></div>
+                        <div id="kawah-rengganis-current-weather"></div>
+                        <div id="kawah-rengganis-forecast"></div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesona Rancabali. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/toggle.js"></script>
+    <script src="../js/kawah-rengganis-interactive.js"></script>
+</body>
+
+</html>

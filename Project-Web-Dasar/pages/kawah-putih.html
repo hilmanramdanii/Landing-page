@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawah Putih - Pesona Rancabali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/kawah-putih.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="../image/Logo.jpg" alt="Pesona Rancabali Logo">
+                <span>Pesona Rancabali</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="../index.html#destinations" class="dropbtn">Destinasi</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/perkebunan-rancabali.html">Perkebunan Teh Rancabali</a></li>
+                            <li><a href="../pages/situ-patenggang.html">Situ Patenggang</a></li>
+                            <li><a href="../pages/kawah-putih.html">Kawah Putih</a></li>
+                            <li><a href="../pages/rancaupas.html">Rancaupas</a></li>
+                            <li><a href="../pages/walini.html">Hot Spring Walini</a></li>
+                            <li><a href="../pages/rengganis.html">Rengganis Suspension Bridge</a></li>
+                            <li><a href="../pages/curug-tilu.html">Ecopark Curug Tilu</a></li>
+                            <li><a href="../pages/glamping.html">Glamping Lakeside</a></li>
+                            <li><a href="../pages/kawah-rengganis.html">Kawah Rengganis</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars" id="hamburger-icon"></i>
+                <i class="fas fa-times" id="close-icon" style="display: none;"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Kawah Putih</h1>
+                <p>Keajaiban alam dengan danau kawah berwarna putih kehijauan di Ciwidey.</p>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="flex-container">
+                <article class="content">
+                    <h1>Kawah Putih Ciwidey</h1>
+                    <h2>Deskripsi</h2>
+                    <p>Kawah Putih Ciwidey adalah wisata alam berupa danau kawah vulkanik berwarna putih kehijauan yang dikelilingi batu
+                        kapur. Terbentuk dari kaldera letusan Gunung Patuha di kawasan Ciwidey sekitar abad ke-10, kawah ini memiliki
+                        kedalaman sekitar 50 meter dengan luas mencapai 25 hektar. Suhu air kawah bervariasi antara 30-40 derajat Celsius
+                        dengan tingkat keasaman tinggi (pH 0,5-1,3), menjadikannya tanpa kehidupan air.</p>
+                    
+                    <h2>Lokasi</h2>
+                    <p>Kawah Putih Ciwidey berlokasi di Jalan Raya Ciwidey Patengan Km 11, Lebakmuncang, Ciwidey, Sugihmukti, Kecamatan
+                        Pasir Jambu, Kabupaten Bandung, Jawa Barat 40972. Berada di ketinggian sekitar 2.430 meter di atas permukaan laut,
+                        kawasan ini memiliki suhu sejuk dan sering berkabut, menambah suasana mistis dan menawan.</p>
+                    
+                    <h2>Sejarah</h2>
+                    <p>Kawah Putih ditemukan pada tahun 1837 oleh Dr. Franz Wilhelm Junghuhn, botanikus asal Jerman. Sebelumnya dianggap
+                        mistis oleh penduduk lokal, area ini kemudian dimanfaatkan untuk penambangan belerang pada zaman kolonial Belanda.
+                        Baru pada tahun 1987, Kawah Putih dibuka sebagai objek wisata oleh Perhutani.</p>
+                    
+                    <h2>Harga Tiket</h2>
+                    <ul>
+                        <li>Wisatawan lokal: Rp 30.000 per orang</li>
+                        <li>Wisatawan asing: Rp 81.000 per orang</li>
+                        <li>Tiket terusan: Rp 74.000 per orang (termasuk Ontang-anting, Sky Walk, Jembatan Apung)</li>
+                        <li>Tarif ontang-anting (PP): Rp 29.000</li>
+                    </ul>
+                    
+                    <h2>Fasilitas</h2>
+                    <p>Fasilitas di Kawah Putih Ciwidey meliputi toilet umum, musala, warung makan, area parkir luas, angkutan
+                        ontang-anting, guide lokal, shelter, spot foto instagramable, tempat istirahat, pusat informasi wisata, tempat
+                        penjualan oleh-oleh, dan lainnya.</p>
+                    
+                    <h2>Jam Operasional</h2>
+                    <p>Kawah Putih Ciwidey buka setiap hari mulai pukul 07.00-17.00 WIB.</p>
+                    
+                    <h2>Daya Tarik</h2>
+                    <h3>1. Danau Kawah Putih</h3>
+                    <p>Danau hasil letusan Gunung Patuha dengan air berwarna putih jernih kehijauan, dikelilingi pasir putih dengan riak
+                        asap dan sedikit letupan lumpur.</p>
+                    
+                    <h3>2. Sunan Ibu</h3>
+                    <p>Bukit di sekitar Kawah Putih yang menjadi spot favorit untuk menyaksikan matahari terbit, dengan panorama alam
+                        memukau berlatar belakang Gunung Patuha dan hamparan hutan hijau.</p>
+                    
+                    <h3>3. Dermaga Ponton</h3>
+                    <p>Dermaga kayu di tepi danau yang populer untuk berfoto dan menikmati keindahan alam sekitar.</p>
+                    
+                    <h3>4. Skywalk Cantigi</h3>
+                    <p>Jembatan bambu sepanjang 500 meter dengan tali tambang sebagai pegangan, memberikan pengalaman unik berjalan di atas
+                        ketinggian sambil menikmati pemandangan alam Kawah Putih.</p>
+                    
+                    <h2>Aktivitas Wisata</h2>
+                    <ul>
+                        <li>Trekking di sekitar kawah</li>
+                        <li>Berfoto di spot-spot instagramable</li>
+                        <li>Menikmati sunrise dari Bukit Sunan Ibu</li>
+                        <li>Berjalan di Skywalk Cantigi</li>
+                        <li>Menaiki ontang-anting menuju kawah</li>
+                        <li>Mencoba kuliner lokal di warung-warung sekitar</li>
+                    </ul>
+                    
+                    <h2>Tips Berkunjung</h2>
+                    <ul>
+                        <li>Gunakan pakaian hangat karena suhu bisa mencapai 10°C</li>
+                        <li>Hindari menyentuh air kawah karena sifatnya yang asam</li>
+                        <li>Datang pagi-pagi untuk menghindari kabut tebal</li>
+                        <li>Bawa masker karena udara mengandung sulfur</li>
+                        <li>Jaga kebersihan lingkungan</li>
+                    </ul>
+
+                    <p>Sumber: <a
+                            href="https://www.detik.com/jabar/wisata/d-7093239/kawah-putih-ciwidey-lokasi-harga-tiket-dan-daya-tariknya">Detik.com</a>
+                    </p>
+                </article>
+
+                <aside class="photo-gallery">
+                    <h2 class="section-title">Galeri Foto</h2>
+                    <div class="photo-container">
+                        <figure>
+                            <img src="../image/kawahputih1.jpg" alt="Pemandangan Kawah Putih" loading="lazy">
+                            <figcaption>Pemandangan Menakjubkan Danau Kawah Putih</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/kawahputih2.jpg" alt="Pengunjung di Tepi Kawah" loading="lazy">
+                            <figcaption>Pengunjung Menikmati Pemandangan di Tepi Kawah</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/kawahputih3.jpg" alt="Kabut di Kawah Putih" loading="lazy">
+                            <figcaption>Suasana Mistis Kabut di Kawah Putih</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/kawahputih4.jpg" alt="Hutan di Sekitar Kawah Putih" loading="lazy">
+                            <figcaption>Hutan Hijau yang Mengelilingi Kawah Putih</figcaption>
+                        </figure>
+                    </div>
+                    <div class="kawah-putih-map">
+                        <h3 class="section-title">Peta Interaktif</h3>
+                        <div id="kawah-putih-map" style="height: 300px;"></div>
+                    </div>
+                    <div class="kawah-putih-weather">
+                        <h3 class="section-title">Prakiraan Cuaca Kawah Putih</h3>
+                        <div id="kawah-putih-weather">
+                            <div id="kawah-putih-current-weather"></div>
+                        <div id="kawah-putih-forecast"></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesona Rancabali. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/kawah-putih-interactive.js"></script>
+    <script src="../js/toggle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkebunan Teh Rancabali - Pesona Rancabali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/perkebunan-rancabali.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="../image/Logo.jpg" alt="Pesona Rancabali Logo">
+                <span>Pesona Rancabali</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="../index.html#destinations" class="dropbtn">Destinasi</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/perkebunan-rancabali.html">Perkebunan Teh Rancabali</a></li>
+                            <li><a href="../pages/situ-patenggang.html">Situ Patenggang</a></li>
+                            <li><a href="../pages/kawah-putih.html">Kawah Putih</a></li>
+                            <li><a href="../pages/rancaupas.html">Rancaupas</a></li>
+                            <li><a href="../pages/walini.html">Hot Spring Walini</a></li>
+                            <li><a href="../pages/rengganis.html">Rengganis Suspension Bridge</a></li>
+                            <li><a href="../pages/curug-tilu.html">Ecopark Curug Tilu</a></li>
+                            <li><a href="../pages/glamping.html">Glamping Lakeside</a></li>
+                            <li><a href="../pages/kawah-rengganis.html">Kawah Rengganis</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars" id="hamburger-icon"></i>
+                <i class="fas fa-times" id="close-icon" style="display: none;"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Perkebunan Teh Rancabali</h1>
+                <p>Menikmati keindahan alam dan ketenangan di Ciwidey, Bandung Selatan.</p>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="flex-container">
+                <article class="content">
+                    <h2>Deskripsi</h2>
+                    <p>Perkebunan Teh Rancabali terletak di daerah pegunungan Ciwidey, Bandung Selatan. Perkebunan ini
+                        menawarkan pemandangan hijau yang menakjubkan dengan hamparan kebun teh yang luas dan udara yang
+                        sejuk. Tempat ini menjadi destinasi favorit bagi wisatawan yang ingin menikmati keindahan alam
+                        dan
+                        ketenangan.</p>
+
+                    <h2>Sejarah Singkat</h2>
+                    <p>Perkebunan Teh Rancabali memiliki sejarah panjang yang dimulai sejak zaman kolonial Belanda.
+                        Didirikan
+                        pada awal abad ke-20, perkebunan ini awalnya dikelola oleh perusahaan Belanda sebelum akhirnya
+                        diambil alih oleh pemerintah Indonesia pasca kemerdekaan. Saat ini, perkebunan dikelola oleh
+                        PTPN
+                        VIII dan telah berkembang menjadi salah satu produsen teh berkualitas tinggi di Indonesia.</p>
+
+                    <h2>Lokasi dan Akses</h2>
+                    <p>Perkebunan Teh Rancabali terletak di Patengan, Rancabali, Bandung, Jawa Barat 40973. Dari
+                        Bandung,
+                        perjalanan menuju Ciwidey dan kemudian lanjut ke Patengan. Akses jalan menuju lokasi cukup baik
+                        dan
+                        terdapat banyak petunjuk jalan. Jarak dari pusat kota Bandung sekitar 50 km dan dapat ditempuh
+                        dalam
+                        waktu sekitar 2-3 jam perjalanan.</p>
+
+                    <h2>Harga Tiket dan Jam Operasional</h2>
+                    <p>Tidak ada biaya masuk untuk menikmati pemandangan perkebunan, namun ada biaya untuk beberapa
+                        aktivitas
+                        di sekitar area:</p>
+                    <ul>
+                        <li>Tiket Danau Situ Patenggang Reguler: Rp25.000</li>
+                        <li>Tiket Danau Situ Patenggang Terusan: Rp75.000</li>
+                        <li>Tiket Masuk Pabrik Teh: Rp5.000</li>
+                        <li>Tiket Wisata Air Panas: Rp5.000</li>
+                        <li>Tiket Teras Bintang: Rp25.000</li>
+                        <li>Tiket Jembatan Pinisi: Rp15.000</li>
+                        <li>Tiket Golesat Sirkuit: Rp50.000</li>
+                    </ul>
+                    <p>Perkebunan buka setiap hari dari pukul 07.00 hingga 17.00 WIB.</p>
+
+                    <h2>Fasilitas</h2>
+                    <p>Fasilitas yang tersedia di area perkebunan meliputi:</p>
+                    <ul>
+                        <li>Kamar mandi umum</li>
+                        <li>Musholla</li>
+                        <li>Lahan parkir (terbatas)</li>
+                        <li>Toko suvenir</li>
+                        <li>Warung makan</li>
+                        <li>Area piknik</li>
+                        <li>Spot foto</li>
+                    </ul>
+
+                    <h2>Daya Tarik</h2>
+                    <h3>Pemandangan Kebun Teh</h3>
+                    <p>Hamparan kebun teh yang luas dengan latar belakang pegunungan menawarkan pemandangan yang memukau
+                        dan
+                        menenangkan. Kabut yang sering menyelimuti area ini, terutama di pagi hari, menambah kesan
+                        mistis dan
+                        indah.</p>
+
+                    <h3>Tur Pabrik Teh</h3>
+                    <p>Pengunjung dapat mengikuti tur ke pabrik teh untuk melihat langsung proses pengolahan teh dari
+                        daun
+                        hingga menjadi produk siap saji. Ini merupakan pengalaman edukatif yang menarik.</p>
+
+                    <h3>Agrowisata</h3>
+                    <p>Terdapat kesempatan untuk memetik teh langsung dari kebun dan belajar tentang berbagai jenis teh
+                        yang
+                        ditanam di sini.</p>
+
+                    <h3>Kuliner Teh</h3>
+                    <p>Jangan lewatkan untuk mencoba berbagai jenis teh lokal yang tersedia di kedai teh setempat.
+                        Pengalaman
+                        menikmati secangkir teh hangat sambil memandangi hamparan kebun teh yang hijau adalah sesuatu
+                        yang
+                        tidak bisa dilupakan.</p>
+
+                    <h2>Aktivitas</h2>
+                    <ul>
+                        <li>Fotografi landscape</li>
+                        <li>Piknik keluarga</li>
+                        <li>Trekking ringan di sekitar kebun</li>
+                        <li>Memetik teh (dengan izin dan panduan)</li>
+                        <li>Mengikuti tur pabrik teh</li>
+                        <li>Mencicipi berbagai jenis teh lokal</li>
+                    </ul>
+
+                    <h2>Cuaca dan Iklim</h2>
+                    <p>Suhu di Perkebunan Teh Rancabali cenderung sejuk, berkisar antara 17-25°C. Curah hujan cukup
+                        tinggi,
+                        terutama pada musim hujan (Oktober-April). Pengunjung disarankan untuk membawa jaket atau
+                        pakaian
+                        hangat.</p>
+
+                    <h2>Tips Berkunjung</h2>
+                    <ul>
+                        <li>Gunakan kendaraan pribadi karena sulit menemukan kendaraan umum menuju lokasi.</li>
+                        <li>Bawa payung atau jas hujan untuk berjaga-jaga.</li>
+                        <li>Kenakan pakaian hangat dan sepatu yang nyaman untuk berjalan-jalan.</li>
+                        <li>Datang pagi atau sore hari untuk menikmati pemandangan terbaik dan menghindari keramaian.
+                        </li>
+                        <li>Jaga kebersihan area dengan tidak membuang sampah sembarangan.</li>
+                        <li>Hormati privasi pekerja perkebunan dan ikuti aturan yang berlaku.</li>
+                    </ul>
+
+                    <p>Sumber: <a href="https://www.orami.co.id/magazine/perkebunan-teh-rancabali">Orami</a></p>
+                </article>
+
+                <aside class="photo-gallery">
+                    <h2 class="section-title">Galeri Foto</h2>
+                    <div class="photo-container">
+                        <figure>
+                            <img src="../image/perkebunan-rancabali1.jpg" alt="Pemandangan Perkebunan Teh Rancabali">
+                            <figcaption>Hamparan Hijau Perkebunan Teh Rancabali</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/perkebunan-rancabali2.jpg" alt="Jalan di Tengah Perkebunan">
+                            <figcaption>Jalan Membelah Perkebunan Teh</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/perkebunan-rancabali3.jpg" alt="Pemetik Teh di Perkebunan">
+                            <figcaption>Aktivitas Pemetikan Teh di Rancabali</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/perkebunan-rancabali4.jpg" alt="Pemandangan Kabut di Perkebunan">
+                            <figcaption>Kabut Pagi di Perkebunan Rancabali</figcaption>
+                        </figure>
+                    </div>
+                    <div class="map-container">
+                        <h3 class="section-title">Peta Interaktif</h3>
+                        <div id="perkebunan-rancabali-map"></div>
+                    </div>
+                    <div class="perkebunan-rancabali-weather">
+                        <h3 class="section-title">Prakiraan Cuaca Rancabali</h3>
+                        <div id="perkebunan-rancabali-weather">
+                            <div id="perkebunan-rancabali-current-weather"></div>
+                            <div id="perkebunan-rancabali-forecast"></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesona Rancabali. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/toggle.js"></script>
+    <script src="../js/perkebunan-rancabali-interactive.js"></script>
+</body>
+
+</html>

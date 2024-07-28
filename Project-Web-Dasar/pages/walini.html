@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Spring Walini - Pesona Rancabali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/walini.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="../image/Logo.jpg" alt="Pesona Rancabali Logo">
+                <span>Pesona Rancabali</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="../index.html#destinations" class="dropbtn">Destinasi</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/perkebunan-rancabali.html">Perkebunan Teh Rancabali</a></li>
+                            <li><a href="../pages/situ-patenggang.html">Situ Patenggang</a></li>
+                            <li><a href="../pages/kawah-putih.html">Kawah Putih</a></li>
+                            <li><a href="../pages/rancaupas.html">Rancaupas</a></li>
+                            <li><a href="../pages/walini.html">Hot Spring Walini</a></li>
+                            <li><a href="../pages/rengganis.html">Rengganis Suspension Bridge</a></li>
+                            <li><a href="../pages/curug-tilu.html">Ecopark Curug Tilu</a></li>
+                            <li><a href="../pages/glamping.html">Glamping Lakeside</a></li>
+                            <li><a href="../pages/kawah-rengganis.html">Kawah Rengganis</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars" id="hamburger-icon"></i>
+                <i class="fas fa-times" id="close-icon" style="display: none;"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hot Spring Walini</h1>
+                <p>Nikmati kehangatan alami dari mata air panas di ketinggian Bandung Selatan.</p>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="flex-container">
+                <article class="content">
+                    <h2>Deskripsi</h2>
+                    <p>Pemandian Air Panas Ciwalini, juga dikenal sebagai Hot Spring Walini, merupakan salah satu pemandian air panas di
+                        Bandung yang cocok sebagai destinasi liburan bersama keluarga. Terletak di kawasan perkebunan teh yang asri,
+                        pemandian ini menawarkan pengalaman berendam air panas alami yang unik dan menyegarkan.</p>
+                
+                    <h2>Lokasi</h2>
+                    <p>Berlokasi di Jl. Raya Ciwidey - Patengan Tenjolaya Ciwidey, Patengan, Kec. Rancabali, Kabupaten Bandung, Jawa
+                        Barat, pemandian ini terletak di ketinggian sekitar 1.700 meter di atas permukaan laut dengan sumber mata air
+                        panas alami dari pegunungan.</p>
+                
+                    <h2>Manfaat Kesehatan</h2>
+                    <p>Air panas di Walini mengandung mineral alami yang dipercaya memiliki berbagai manfaat kesehatan. Kandungan
+                        belerang di airnya berkhasiat bagi kesehatan, mulai dari meremajakan kulit hingga menyembuhkan penyakit-penyakit
+                        kulit seperti kudis, kurap, dan infeksi lainnya. Berendam di air panas juga dapat membantu meredakan ketegangan
+                        otot dan meningkatkan sirkulasi darah.</p>
+                
+                    <h2>Fasilitas</h2>
+                    <p>Pemandian Ciwalini memiliki beragam fasilitas untuk kenyamanan pengunjung, termasuk:</p>
+                    <ul>
+                        <li>Beberapa kolam air panas dengan suhu berbeda</li>
+                        <li>Kolam anak-anak dan dewasa</li>
+                        <li>Saung duduk-duduk untuk bersantai</li>
+                        <li>Tempat parkir yang luas</li>
+                        <li>Tempat makan dan minum</li>
+                        <li>Musholla untuk beribadah</li>
+                        <li>Toilet dan kamar ganti</li>
+                        <li>Kolam pribadi yang bisa di-booking untuk privasi lebih</li>
+                    </ul>
+                
+                    <h2>Wahana Bermain</h2>
+                    <p>Selain pemandian air panas, Walini juga menyediakan berbagai wahana bermain untuk menambah keseruan kunjungan
+                        Anda:</p>
+                    <ul>
+                        <li>Flying fox</li>
+                        <li>Motor cross</li>
+                        <li>Waterboom</li>
+                        <li>ATV</li>
+                        <li>Area bermain anak</li>
+                    </ul>
+                
+                    <h2>Rute dan Aksesibilitas</h2>
+                    <p>Rute menuju lokasi Pemandian Ciwalini cukup mudah diakses. Dari Bandung, Anda bisa melalui jalan tol Soroja
+                        dengan waktu tempuh sekitar 1,5-2 jam. Setelah keluar tol, ikuti arah ke Ciwidey. Dari pusat Ciwidey, ikuti
+                        petunjuk jalan menuju Walini atau Rancabali. Pengunjung dapat menggunakan kendaraan pribadi atau transportasi
+                        umum, meskipun opsi kendaraan pribadi lebih disarankan untuk kemudahan akses.</p>
+                
+                    <h2>Harga Tiket</h2>
+                    <p>Harga tiket masuk ke Walini bervariasi tergantung pada jenis kolam dan fasilitas yang digunakan:</p>
+                    <ul>
+                        <li>Tiket masuk area: Rp 15.000 - Rp 20.000 per orang</li>
+                        <li>Berendam di kolam umum: Rp 25.000 - Rp 35.000 per orang</li>
+                        <li>Sewa kolam pribadi: mulai dari Rp 100.000 per jam</li>
+                    </ul>
+                    <p>Harga wahana permainan dikenakan terpisah dan bervariasi untuk setiap wahana.</p>
+                
+                    <h2>Jam Operasional</h2>
+                    <p>Objek wisata ini buka setiap hari mulai jam 7 pagi hingga 4 sore. Namun, disarankan untuk mengonfirmasi jam
+                        operasional terkini sebelum berkunjung, terutama pada hari libur atau akhir pekan.</p>
+                
+                    <h2>Tips Berkunjung</h2>
+                    <ul>
+                        <li>Kunjungi pada hari kerja untuk menghindari keramaian</li>
+                        <li>Bawa pakaian ganti dan handuk</li>
+                        <li>Jangan lupa membawa kamera untuk mengabadikan momen</li>
+                        <li>Perhatikan aturan dan petunjuk keselamatan di area pemandian</li>
+                        <li>Cek prakiraan cuaca sebelum berkunjung, karena cuaca di pegunungan bisa berubah-ubah</li>
+                    </ul>
+                
+                    <p>Sumber: <a
+                            href="https://kumparan.com/seputar-bandung/pemandian-air-panas-ciwalini-informasi-lengkap-yang-perlu-diketahui-21jcEJIX9Q8/full">Kumparan</a>
+                        dan berbagai sumber wisata lokal</p>
+                </article>
+
+                <aside class="photo-gallery">
+                    <h2 class="section-title">Galeri Foto</h2>
+                    <div class="photo-container">
+                        <figure>
+                            <img src="../image/ciwalini1.jpg" alt="Kolam Air Panas Ciwalini">
+                            <figcaption>Kolam Air Panas Alami Ciwalini yang Menenangkan</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/ciwalini2.jpg" alt="Pemandangan Alam Sekitar">
+                            <figcaption>Keindahan Alam Pegunungan di Sekitar Ciwalini</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/ciwalini3.jpg" alt="Pengunjung Berendam">
+                            <figcaption>Pengalaman Berendam di Air Panas Alami Ciwalini</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/ciwalini4.jpeg" alt="Fasilitas Pemandian">
+                            <figcaption>Fasilitas Modern di Pemandian Air Panas Ciwalini</figcaption>
+                        </figure>
+                    </div>
+                    <div class="map-container">
+                        <h3 class="section-title">Peta Lokasi Ciwalini</h3>
+                        <div id="ciwalini-map"></div>
+                    </div>
+                    <div class="ciwalini-weather">
+                        <h3 class="section-title">Prakiraan Cuaca Pemandian Air Panas Ciwalini</h3>
+                        <div id="ciwalini-weather"></div>
+                        <div id="ciwalini-current-weather"></div>
+                        <div id="ciwalini-forecast"></div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesona Rancabali. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/toggle.js"></script>
+    <script src="../js/walini-interactive.js"></script>
+</body>
+
+</html>

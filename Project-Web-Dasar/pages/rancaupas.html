@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rancaupas - Pesona Rancabali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/rancaupas.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="../image/Logo.jpg" alt="Pesona Rancabali Logo">
+                <span>Pesona Rancabali</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="../index.html#destinations" class="dropbtn">Destinasi</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/perkebunan-rancabali.html">Perkebunan Teh Rancabali</a></li>
+                            <li><a href="../pages/situ-patenggang.html">Situ Patenggang</a></li>
+                            <li><a href="../pages/kawah-putih.html">Kawah Putih</a></li>
+                            <li><a href="../pages/rancaupas.html">Rancaupas</a></li>
+                            <li><a href="../pages/walini.html">Hot Spring Walini</a></li>
+                            <li><a href="../pages/rengganis.html">Rengganis Suspension Bridge</a></li>
+                            <li><a href="../pages/curug-tilu.html">Ecopark Curug Tilu</a></li>
+                            <li><a href="../pages/glamping.html">Glamping Lakeside</a></li>
+                            <li><a href="../pages/kawah-rengganis.html">Kawah Rengganis</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars" id="hamburger-icon"></i>
+                <i class="fas fa-times" id="close-icon" style="display: none;"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Rancaupas</h1>
+                <p>Kawasan konservasi dengan keindahan alam dan beragam aktivitas outdoor di Ciwidey.</p>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="flex-container">
+                <article class="content">
+                    <h2>Deskripsi</h2>
+                    <p>Rancaupas adalah kawasan konservasi yang terletak di Ciwidey, Kabupaten Bandung. Tempat ini
+                        terkenal
+                        dengan keindahan alamnya yang masih asri serta beragam aktivitas outdoor yang dapat dinikmati
+                        oleh
+                        pengunjung. Mulai dari berkemah, hiking, hingga berinteraksi dengan rusa di penangkaran rusa
+                        Rancaupas.</p>
+
+                    <h2>Lokasi</h2>
+                    <p>Rancaupas berlokasi di Jalan Raya Ciwidey-Patengan Km 11, Rancabali, Kabupaten Bandung, Jawa
+                        Barat 40972.</p>
+
+                    <h2>Harga Tiket</h2>
+                    <ul>
+                        <li>Wisatawan lokal: Rp 25.000 per orang</li>
+                        <li>Wisatawan asing: Rp 50.000 per orang</li>
+                        <li>Camping: Rp 10.000 per orang per malam</li>
+                    </ul>
+
+                    <h2>Fasilitas</h2>
+                    <p>Fasilitas yang tersedia di Rancaupas meliputi area parkir, toilet umum, musala, warung makan, dan
+                        area
+                        berkemah. Selain itu, terdapat juga penangkaran rusa yang menjadi daya tarik utama di Rancaupas.
+                    </p>
+
+                    <h2>Jam Operasional</h2>
+                    <p>Rancaupas buka setiap hari selama 24 jam.</p>
+
+                    <h2>Daya Tarik</h2>
+                    <h3>Penangkaran Rusa</h3>
+                    <p>Pengunjung dapat berinteraksi langsung dengan rusa di penangkaran. Rusa-rusa di sini jinak dan
+                        bisa diberi
+                        makan langsung oleh pengunjung.</p>
+
+                    <h3>Kawasan Camping</h3>
+                    <p>Rancaupas memiliki area berkemah yang luas dan nyaman. Pengunjung dapat mendirikan tenda di
+                        kawasan ini
+                        dan menikmati keindahan alam serta udara sejuk.</p>
+
+                    <h3>Kolam Renang Air Panas</h3>
+                    <p>Terdapat juga kolam renang air panas yang dapat dinikmati oleh pengunjung. Kolam ini menggunakan
+                        air panas
+                        alami yang berasal dari sumber mata air panas di kawasan tersebut.</p>
+
+                    <h3>Hutan Pinus</h3>
+                    <p>Rancaupas dikelilingi oleh hutan pinus yang asri, menawarkan udara segar dan pemandangan yang menakjubkan. Pengunjung
+                        dapat menikmati aktivitas seperti hiking, trekking, atau sekadar bersantai di bawah rindangnya pohon pinus.</p>
+
+                                <h2>Tips Berkunjung</h2>
+                                <ul>
+                                    <li>Bawalah perlengkapan camping yang memadai jika berencana untuk berkemah, termasuk sleeping bag dan matras.</li>
+                                    <li>Gunakan pakaian hangat, terutama pada malam hari karena suhu di Rancaupas bisa sangat dingin.</li>
+                                    <li>Jaga kebersihan dengan tidak membuang sampah sembarangan. Bawalah kantong sampah sendiri jika perlu.</li>
+                                    <li>Hati-hati saat berinteraksi dengan rusa, jangan terlalu berisik atau melakukan gerakan mendadak agar tidak
+                                        membuat rusa takut.</li>
+                                    <li>Bawa kamera untuk mengabadikan momen indah di Rancaupas.</li>
+                                    <li>Datang lebih pagi untuk menghindari keramaian, terutama pada akhir pekan dan hari libur.</li>
+                                    <li>Perhatikan prakiraan cuaca sebelum berkunjung untuk memastikan pengalaman yang optimal.</li>
+                                    <li>Bawa bekal makanan dan minuman, meskipun tersedia warung makan di lokasi.</li>
+                                    <li>Ikuti petunjuk dan aturan yang berlaku di kawasan Rancaupas demi keselamatan dan kenyamanan bersama.</li>
+                                </ul>
+                                
+                                <h2>Aksesibilitas</h2>
+                                <p>Rancaupas dapat diakses dengan mudah dari Bandung melalui Jalan Raya Soreang-Ciwidey. Waktu tempuh dari pusat Kota
+                                    Bandung sekitar 2-3 jam, tergantung kondisi lalu lintas. Tersedia angkutan umum dan travel yang melayani rute menuju
+                                    Rancaupas, namun disarankan menggunakan kendaraan pribadi untuk fleksibilitas yang lebih baik.</p>
+
+                    <p>Sumber: <a href="https://blog.tripcetera.com/id/ranca-upas/">Tripcetera</a></p>
+                </article>
+
+                <aside class="photo-gallery">
+                    <h2 class="section-title">Galeri Foto</h2>
+                    <div class="photo-container">
+                        <figure>
+                            <img src="../image/rancaupas1.jpg" alt="Pemandangan Alam Rancaupas">
+                            <figcaption>Keindahan Alam Rancaupas yang Memukau</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/rancaupas2.jpg" alt="Camping di Rancaupas">
+                            <figcaption>Pengalaman Camping di Tengah Alam Rancaupas</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/rancaupas3.jpg" alt="Aktivitas Outbound Rancaupas">
+                            <figcaption>Seru-seruan dengan Aktivitas Outbound</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/rancaupas4.jpg" alt="Sunrise di Rancaupas">
+                            <figcaption>Momen Magis Sunrise di Rancaupas</figcaption>
+                        </figure>
+                    </div>
+                    <div class="map-container">
+                        <h3 class="section-title">Peta Interaktif</h3>
+                        <div id="rancaupas-map"></div>
+                    </div>
+                    <div class="rancaupas-weather">
+                        <h3 class="section-title">Prakiraan Cuaca Rancaupas</h3>
+                        <div id="rancaupas-weather"></div>
+                        <div id="rancaupas-current-weather"></div>
+                        <div id="rancaupas-forecast"></div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesona Rancabali. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/toggle.js"></script>
+    <script src="../js/rancaupas-interactive.js"></script>
+</body>
+
+</html>

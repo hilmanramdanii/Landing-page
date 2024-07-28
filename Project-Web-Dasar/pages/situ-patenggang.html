@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situ Patenggang - Pesona Rancabali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/situ-patenggang.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="../image/Logo.jpg" alt="Pesona Rancabali Logo">
+                <span>Pesona Rancabali</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="../index.html#destinations" class="dropbtn">Destinasi</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/perkebunan-rancabali.html">Perkebunan Teh Rancabali</a></li>
+                            <li><a href="../pages/situ-patenggang.html">Situ Patenggang</a></li>
+                            <li><a href="../pages/kawah-putih.html">Kawah Putih</a></li>
+                            <li><a href="../pages/rancaupas.html">Rancaupas</a></li>
+                            <li><a href="../pages/walini.html">Hot Spring Walini</a></li>
+                            <li><a href="../pages/rengganis.html">Rengganis Suspension Bridge</a></li>
+                            <li><a href="../pages/curug-tilu.html">Ecopark Curug Tilu</a></li>
+                            <li><a href="../pages/glamping.html">Glamping Lakeside</a></li>
+                            <li><a href="../pages/kawah-rengganis.html">Kawah Rengganis</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars" id="hamburger-icon"></i>
+                <i class="fas fa-times" id="close-icon" style="display: none;"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Situ Patenggang</h1>
+                <p>Menikmati keindahan danau dan panorama alam di Ciwidey, Bandung Selatan.</p>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="flex-container">
+                <article class="content">
+                    <h2>Deskripsi</h2>
+                    <p>Situ Patenggang adalah sebuah danau alami yang terletak di Ciwidey, Bandung Selatan, Jawa Barat. Danau ini berada
+                        di ketinggian sekitar 1.600 meter di atas permukaan laut, menjadikannya salah satu danau tertinggi di Indonesia.
+                        Dengan luas sekitar 45 hektar, Situ Patenggang dikelilingi oleh perbukitan hijau dan perkebunan teh yang luas,
+                        menciptakan pemandangan yang memukau.</p>
+                    <p>Nama "Patenggang" berasal dari bahasa Sunda yang berarti "berpisah". Hal ini terkait dengan legenda lokal tentang
+                        sepasang kekasih yang berpisah di danau ini. Danau ini terkenal dengan pemandangan yang indah, udara yang sejuk,
+                        dan suasana yang tenang, menjadikannya destinasi favorit bagi wisatawan yang mencari ketenangan dan keindahan
+                        alam.</p>
+                    <p>Pengunjung dapat menikmati berbagai aktivitas di Situ Patenggang, seperti berperahu di danau, piknik di sekitar
+                        danau, atau sekadar menikmati pemandangan yang menenangkan. Terdapat juga berbagai warung yang menjual makanan
+                        dan minuman lokal untuk dinikmati oleh para pengunjung.</p>
+                
+                    <h2>Sejarah dan Legenda</h2>
+                    <p>Situ Patenggang memiliki legenda menarik yang telah diceritakan turun-temurun oleh masyarakat setempat. Konon,
+                        danau ini terbentuk dari air mata Dewi Rengganis yang menangis karena berpisah dengan kekasihnya, Ki Santang.
+                        Legenda ini menjadi daya tarik tersendiri bagi wisatawan dan menjadi bagian integral dari budaya lokal.</p>
+                    <p>Di tengah danau terdapat sebuah pulau kecil yang disebut "Pulau Asmara" atau "Sasapan". Pulau ini dihubungkan
+                        dengan daratan oleh sebuah jembatan kecil dan menjadi spot favorit untuk berfoto dan menikmati pemandangan danau
+                        dari sudut yang berbeda.</p>
+                
+                    <h2>Daya Tarik</h2>
+                    <p>Situ Patenggang memiliki banyak daya tarik yang membuat pengunjung betah berwisata di sini, seperti:</p>
+                    <ul>
+                        <li><strong>Pemandangan Danau yang Indah:</strong> Danau yang luas dengan bukit-bukit hijau di sekitarnya dan
+                            kabut yang sering menghiasi danau saat pagi atau sore hari, menciptakan pemandangan yang magis.</li>
+                        <li><strong>Kebun Teh yang Hijau:</strong> Perkebunan teh Rancabali yang luas di sekitar danau menjadi latar
+                            belakang yang sempurna untuk berjalan-jalan dan berfoto.</li>
+                        <li><strong>Legenda Cinta Abadi:</strong> Legenda tentang cinta antara Dewi Rengganis dan Ki Santang yang
+                            menjadi simbol dari Batu Cinta, menarik minat wisatawan romantis.</li>
+                        <li><strong>Pulau Asmara:</strong> Pulau kecil di tengah danau yang bisa dikunjungi dengan berjalan kaki melalui
+                            jembatan penghubung.</li>
+                        <li><strong>Aktivitas Air:</strong> Pengunjung dapat menyewa perahu untuk mengelilingi danau atau memancing di
+                            beberapa titik yang diizinkan.</li>
+                        <li><strong>Spot Instagramable:</strong> Banyak spot untuk berfoto, termasuk Kapal Pinisi raksasa yang merupakan
+                            restoran terapung dengan pemandangan indah.</li>
+                        <li><strong>Sunrise dan Sunset:</strong> Momen matahari terbit dan terbenam di Situ Patenggang sangat memukau
+                            dan sering menjadi incaran fotografer.</li>
+                    </ul>
+                
+                    <h2>Info Wisata</h2>
+                    <h3>Lokasi dan Rute Perjalanan</h3>
+                    <p>Situ Patenggang berlokasi di Jalan Raya Ciwidey-Rancabali, Desa Patengan, Kecamatan Rancabali, Kabupaten Bandung,
+                        Jawa Barat 40973. Dari pusat kota Bandung, perjalanan memakan waktu sekitar 2-3 jam tergantung kondisi lalu
+                        lintas. Jika dari Jakarta, ambil tol Cipularang, keluar di Tol Kopo, kemudian masuk ke Soreang dan menuju
+                        Ciwidey.</p>
+                
+                    <h3>Tiket Masuk dan Jam Buka</h3>
+                    <p>Tiket masuk hari Senin-Jumat adalah Rp18.000, sedangkan hari Sabtu-Minggu atau hari libur Rp20.500. Jam buka
+                        mulai dari 08.00-20.00 WIB. Untuk aktivitas tambahan seperti menyewa perahu, biaya terpisah dikenakan.</p>
+            
+                    <h2>Tips Berwisata</h2>
+                    <ul>
+                        <li><strong>Gunakan Kendaraan Pribadi:</strong> Sulit menemukan kendaraan umum, jadi disarankan menggunakan
+                            kendaraan pribadi atau menyewa kendaraan di Bandung.</li>
+                        <li><strong>Bawa Payung atau Jas Hujan:</strong> Cuaca di Situ Patenggang dapat berubah dengan cepat. Hujan
+                            sering turun, terutama di sore hari.</li>
+                        <li><strong>Gunakan Pakaian yang Tebal:</strong> Udara di sini sangat dingin, terutama saat pagi dan malam hari.
+                            Disarankan memakai pakaian tebal atau jaket.</li>
+                        <li><strong>Datang Pagi-pagi:</strong> Untuk menikmati pemandangan kabut di atas danau dan menghindari
+                            keramaian, sebaiknya datang pagi hari.</li>
+                        <li><strong>Bawa Kamera:</strong> Pemandangan di Situ Patenggang sangat fotogenik, jadi pastikan untuk membawa
+                            kamera atau smartphone untuk mengabadikan momen.</li>
+                        <li><strong>Hormati Lingkungan:</strong> Jaga kebersihan area wisata dengan tidak membuang sampah sembarangan
+                            dan menghormati flora dan fauna setempat.</li>
+                        <li><strong>Cek Prakiraan Cuaca:</strong> Sebelum berkunjung, cek prakiraan cuaca untuk memastikan kondisi yang
+                            ideal untuk berwisata.</li>
+                    </ul>
+                
+                    <p>Sumber: <a href="https://www.orami.co.id/magazine/situ-patenggang?page=all">Orami.com</a></p>
+                </article>
+
+                <aside class="photo-gallery">
+                    <h2 class="section-title">Galeri Foto</h2>
+                    <div class="photo-container">
+                        <figure>
+                            <img src="../image/situpatenggang1.jpg" alt="Panorama Situ Patenggang">
+                            <figcaption>Keindahan Panorama Situ Patenggang</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/situpatenggang2.jpg" alt="Perahu di Situ Patenggang">
+                            <figcaption>Menikmati Danau dengan Perahu Tradisional</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/situpatenggang3.jpg" alt="Batu Cinta Situ Patenggang">
+                            <figcaption>Legenda Batu Cinta di Situ Patenggang</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/situpatenggang4.jpeg" alt="Sunset di Situ Patenggang">
+                            <figcaption>Momen Magis Sunset di Situ Patenggang</figcaption>
+                        </figure>
+                    </div>
+                    <div class="map-container">
+                        <h3 class="section-title">Peta Interaktif</h3>
+                        <div id="situ-patenggang-map"></div>
+                    </div>
+                    <div class="situ-patenggang-weather">
+                        <h3 class="section-title">Prakiraan Cuaca Situ Patenggang</h3>
+                        <div id="situ-patenggang-weather"></div>
+                        <div id="situ-patenggang-current-weather"></div>
+                        <div id="situ-patenggang-forecast"></div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesona Rancabali. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/toggle.js"></script>
+    <script src="../js/situ-patenggang-interactive.js"></script>
+</body>
+
+</html>

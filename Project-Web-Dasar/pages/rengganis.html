@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rengganis Suspension Bridge - Pesona Rancabali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/rengganis.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="../image/Logo.jpg" alt="Pesona Rancabali Logo">
+                <span>Pesona Rancabali</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="../index.html#destinations" class="dropbtn">Destinasi</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../pages/perkebunan-rancabali.html">Perkebunan Teh Rancabali</a></li>
+                            <li><a href="../pages/situ-patenggang.html">Situ Patenggang</a></li>
+                            <li><a href="../pages/kawah-putih.html">Kawah Putih</a></li>
+                            <li><a href="../pages/rancaupas.html">Rancaupas</a></li>
+                            <li><a href="../pages/walini.html">Hot Spring Walini</a></li>
+                            <li><a href="../pages/rengganis.html">Rengganis Suspension Bridge</a></li>
+                            <li><a href="../pages/curug-tilu.html">Ecopark Curug Tilu</a></li>
+                            <li><a href="../pages/glamping.html">Glamping Lakeside</a></li>
+                            <li><a href="../pages/kawah-rengganis.html">Kawah Rengganis</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars" id="hamburger-icon"></i>
+                <i class="fas fa-times" id="close-icon" style="display: none;"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Rengganis Suspension Bridge</h1>
+                <p>Jembatan gantung terpanjang se-Asia Tenggara dengan pemandangan alam yang memukau.</p>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="flex-container">
+                <article class="content">
+                    <h2>Deskripsi</h2>
+                    <p>Rengganis Suspension Bridge atau Jembatan Gantung Rengganis di Kabupaten Bandung saat ini menjadi jembatan
+                        gantung terpanjang se-Asia Tenggara dengan panjang 370 meter dan ketinggian lebih dari 100 meter. Mengalahkan
+                        panjang dari Situ Gunung Suspension Bridge di Kabupaten Sukabumi. Jembatan ini diresmikan pada tahun 2023 dan
+                        segera menjadi ikon wisata baru di kawasan Rancabali.</p>
+                
+                    <p>Nama "Rengganis" diambil dari legenda lokal tentang Dewi Rengganis, seorang putri cantik yang konon tinggal di
+                        kawasan Gunung Patuha. Jembatan ini menghubungkan dua bukit di area perkebunan teh, memberikan pengalaman unik
+                        berjalan di atas hamparan hijau kebun teh yang luas.</p>
+                
+                    <h2>Lokasi</h2>
+                    <p>Rengganis Suspension Bridge berlokasi di R9GF+HJJ, Patengan, Kec. Rancabali, Kabupaten Bandung, Jawa Barat 40973.
+                        Lokasinya strategis, berdekatan dengan objek wisata populer lainnya seperti Kawah Putih dan Glamping Lakeside
+                        Rancabali.</p>
+                
+                    <h2>Harga Tiket</h2>
+                    <ul>
+                        <li>Tiket masuk: Rp 75.000 per orang</li>
+                        <li>VIP Ticket: Rp 100.000 per orang</li>
+                        <li>Parkir Mobil: Rp 5.000</li>
+                        <li>Parkir Motor: Rp 2.000</li>
+                    </ul>
+                
+                    <h2>Fasilitas</h2>
+                    <p>Fasilitas yang tersedia di Rengganis Suspension Bridge meliputi area parkir, toilet umum, musala, café, dan
+                        tempat sampah. Selain itu, terdapat juga VIP Ticket untuk bundling dengan daya tarik lain. Fasilitas tambahan
+                        termasuk:</p>
+                    <ul>
+                        <li>Spot foto instagramable di sekitar jembatan</li>
+                        <li>Toko suvenir yang menjual produk-produk lokal</li>
+                        <li>Area istirahat dengan pemandangan indah</li>
+                        <li>Petugas keamanan yang berjaga sepanjang jembatan</li>
+                    </ul>
+                
+                    <h2>Jam Operasional</h2>
+                    <p>Rengganis Suspension Bridge buka setiap hari dari jam 07:00 hingga 17:00 WIB. Pengunjung disarankan untuk datang
+                        lebih awal, terutama pada akhir pekan dan hari libur, untuk menghindari antrean panjang.</p>
+                
+                    <h2>Daya Tarik</h2>
+                    <h3>Keindahan Alam</h3>
+                    <p>Jembatan ini menawarkan pemandangan alam yang menakjubkan dari ketinggian lebih dari 100 meter, memberikan
+                        pengalaman berjalan di atas awan. Pengunjung dapat menikmati panorama 360 derajat kebun teh, pegunungan, dan
+                        lembah di bawahnya.</p>
+                
+                    <h3>Desain Arsitektur</h3>
+                    <p>Selain panjangnya yang mengesankan, jembatan ini juga memiliki desain arsitektur yang menarik. Strukturnya yang
+                        kokoh namun elegan menjadi daya tarik tersendiri bagi para penggemar fotografi dan arsitektur.</p>
+                
+                    <h3>Rute yang Mudah Ditempuh</h3>
+                    <p>Akses menuju Rengganis Suspension Bridge sangat mudah, baik menggunakan mobil maupun motor, dengan jalan yang
+                        lebar dan mudah dilalui. Lokasinya yang strategis memungkinkan wisatawan untuk mengunjungi beberapa objek wisata
+                        dalam satu perjalanan.</p>
+                
+                    <h3>Aktivitas Ekstrem</h3>
+                    <p>Bagi pencinta adrenalin, jembatan ini menawarkan sensasi tersendiri. Getaran ringan dan pemandangan ke bawah yang
+                        menantang memberikan pengalaman yang tidak terlupakan.</p>
+                
+                    <h2>Tips Berkunjung</h2>
+                    <ul>
+                        <li>Gunakan pakaian tebal karena cuaca dingin dan angin yang kencang.</li>
+                        <li>Bawalah perlengkapan yang memadai untuk kenyamanan selama berkunjung, termasuk air minum dan camilan.</li>
+                        <li>Manfaatkan VIP Ticket untuk pengalaman yang lebih lengkap dan menghindari antrean panjang.</li>
+                        <li>Jaga kebersihan dengan tidak membuang sampah sembarangan.</li>
+                        <li>Datang lebih awal di pagi hari untuk menikmati pemandangan kabut di atas kebun teh.</li>
+                        <li>Perhatikan batas maksimum pengunjung di jembatan dan ikuti petunjuk petugas demi keamanan.</li>
+                        <li>Bagi yang takut ketinggian, disarankan untuk mempersiapkan mental sebelum menyeberangi jembatan.</li>
+                        <li>Jangan lupa membawa kamera untuk mengabadikan momen di jembatan dan pemandangan sekitarnya.</li>
+                    </ul>
+                
+                    <p>Sumber: <a href="https://atourin.com/destination/bandung/rengganis-suspension-bridge">Atourin</a></p>
+                </article>
+
+                <aside class="photo-gallery">
+                    <h2 class="section-title">Galeri Foto</h2>
+                    <div class="photo-container">
+                        <figure>
+                            <img src="../image/rengganis1.jpg" alt="Rengganis Suspension Bridge">
+                            <figcaption>Jembatan Gantung Rengganis yang Menakjubkan</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/rengganis2.jpg" alt="Pemandangan dari Jembatan">
+                            <figcaption>Panorama Alam dari Ketinggian Jembatan Rengganis</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/rengganis3.jpg" alt="Wisatawan di Jembatan Rengganis">
+                            <figcaption>Pengalaman Seru Melintasi Jembatan Gantung</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../image/rengganis4.jpg" alt="Sunrise di Rengganis">
+                            <figcaption>Momen Magis Sunrise dari Jembatan Rengganis</figcaption>
+                        </figure>
+                    </div>
+                    <div class="map-container">
+                        <h3 class="section-title">Peta Interaktif</h3>
+                        <div id="rengganis-map"></div>
+                    </div>
+                    <div class="rengganis-weather">
+                        <h3 class="section-title">Prakiraan Cuaca Rengganis Suspension Bridge</h3>
+                        <div id="rengganis-weather"></div>
+                        <div id="rengganis-current-weather"></div>
+                        <div id="rengganis-forecast"></div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesona Rancabali. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/toggle.js"></script>
+    <script src="../js/rengganis-interactive.js"></script>
+</body>
+
+</html>
